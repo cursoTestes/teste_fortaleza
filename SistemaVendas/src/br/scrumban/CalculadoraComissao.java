@@ -4,7 +4,7 @@ public class CalculadoraComissao {
 
 	private static final double FAIXA_COMISSAO_CINCO_PORCENTO = 0.05;
 
-	public static double calcula(double venda) {
+	public double calcula(double venda) {
 		
 		double resultado = venda * FAIXA_COMISSAO_CINCO_PORCENTO;
 

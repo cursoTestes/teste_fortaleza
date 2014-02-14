@@ -2,7 +2,6 @@ package br.scrumban;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 public class TestCalculadoraComissao {
@@ -12,7 +11,7 @@ public class TestCalculadoraComissao {
 		int venda = 100;
 		int esperado = 5;
 		
-		double calculo = CalculadoraComissao.calcula( venda );
+		double calculo = new CalculadoraComissao().calcula( venda );
 		
 		assertEquals( esperado, calculo, 0 );
 	}
@@ -22,7 +21,7 @@ public class TestCalculadoraComissao {
 		int venda = 10000;
 		int esperado = 500;
 		
-		double calculo = CalculadoraComissao.calcula( venda );
+		double calculo = new CalculadoraComissao().calcula( venda );
 		
 		assertEquals( esperado, calculo, 0 );
 	}
@@ -32,7 +31,7 @@ public class TestCalculadoraComissao {
 		int venda = 1;
 		double esperado = 0.05;
 		
-		double calculo = CalculadoraComissao.calcula( venda );
+		double calculo = new CalculadoraComissao().calcula( venda );
 		
 		assertEquals( esperado, calculo, 0 );
 	}
@@ -42,7 +41,7 @@ public class TestCalculadoraComissao {
 		int venda = 0;
 		double esperado = 0;
 		
-		double calculo = CalculadoraComissao.calcula( venda );
+		double calculo = new CalculadoraComissao().calcula( venda );
 		
 		assertEquals( esperado, calculo, 0 );
 	}
@@ -52,7 +51,7 @@ public class TestCalculadoraComissao {
 		double venda = 50.80;
 		double esperado = 2.54;
 		
-		double calculo = CalculadoraComissao.calcula( venda );
+		double calculo = new CalculadoraComissao().calcula( venda );
 		
 		assertEquals( esperado, calculo, 0 );
 	}
@@ -62,7 +61,7 @@ public class TestCalculadoraComissao {
 		double venda = 55.59;
 		double esperado = 2.77;
 		
-		double calculo = CalculadoraComissao.calcula( venda );
+		double calculo = new CalculadoraComissao().calcula( venda );
 		
 		assertEquals( esperado, calculo, 0 );
 	}
